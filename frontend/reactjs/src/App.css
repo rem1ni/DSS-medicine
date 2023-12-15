@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background: radial-gradient(ellipse at center, #FF4B2B, #1700FF);
+  background-size: 400% 400%;
+  animation: gradientBackground 30s ease infinite;
+  margin: 0;
+}
+
+@keyframes gradientBackground {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.calculator {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  text-align: left;
+}
+
+.calculator {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  text-align: left;
+}
+
+.image-upload-tab {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  text-align: left;
+}
+
+.calculator label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.calculator input[type="text"],
+.calculator select,
+.calculator button {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.calculator button {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calculator button:hover {
+  background-color: #333;
+}
+
+.tabs input[type="text"],
+.tabs select,
+.tabs button {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.tabs button {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.tabs button:hover {
+  background-color: #333;
+}
+
+.image-upload-tab button {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-top: 15px;
+  margin-bottom: px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.image-upload-tab button {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.image-upload-tab button:hover {
+  background-color: #333;
+}
+
+.result-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  text-align: left;
+  overflow-y: auto; 
+  max-height: 650px; 
+
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+  
+}
+
+#previous-results {
+  margin-top: 20px;
+}
